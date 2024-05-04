@@ -1,0 +1,231 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+.bg .content{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/BG-ningali.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+.logo{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 40vh;
+}
+
+.deskripsi{
+    display: flex;
+    justify-content: center;
+}
+
+.deskripsi h3{
+    margin-top:8px;
+    text-align: center;
+    font-family: poppins;
+    font-weight: bold;
+}
+
+.deskripsi h2{
+    margin-top: 20px;
+    text-align: center;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col0{
+    display: none;
+    position: absolute;
+}
+
+.col1{
+    padding-right: 2rem;
+}
+
+.col1 .char-atas{
+    padding: 0 1rem;
+}
+
+.col1 .char-atas img{
+    width: 220px;
+    margin-top: 155px;
+    margin-left: 100px;
+}
+.col1 .char-bawah img{
+    width: 180px;
+    margin-top: -140px;
+    margin-left: 270px;
+}
+
+.col1 .start-btn img{
+    width: 150px;
+    margin-top: -100px;
+    margin-left: 40px;
+}
+
+.col2{
+    padding-right: 2rem;
+    display: block;
+}
+
+.col2 img{
+    width: 120px;
+}
+
+
+
+
+
+
+/* Media Queries */
+
+/* Tablet */
+@media(max-width: 758px){
+
+}
+
+
+/* Mobile */
+@media(max-width: 450px){
+    .bg .content{
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(../img/bg_mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: fixed;
+    }
+
+    .logo{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo img{
+        width: 25vh;
+    }
+
+    .deskripsi{
+        padding: 0 1rem;
+    }
+
+    .deskripsi h3{
+        margin-top:10px;
+        text-align: center;
+        font-family: poppins;
+        font-weight: bold;
+        font-size: 14px;
+        color: rgb(44, 44, 44);
+    }
+    
+    .deskripsi h2{
+        margin-top: 20px;
+        text-align: center;
+        font-family: poppins;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .container .start-btn{
+        display: none;
+    }
+
+    .container{
+        margin-top: 40px;
+    }
+
+    .container .col2{
+        display: none;
+    }
+
+
+    .col1 .char-atas{
+        padding: 0;
+    }
+
+    .col1 .char-atas img{
+        width: 140px;
+        margin-top: 240px;
+        margin-left: 20px;
+    }
+    .col1 .char-bawah img{
+        width: 100px;
+        margin-top: -25px;
+        margin-left: 120px;
+    }
+
+    .col0{
+        display: block;
+    }
+
+    .col0 img{
+        width: 200px;
+        margin-left: 25px;
+        margin-top: 5px;
+    }
+
+
+    
+}

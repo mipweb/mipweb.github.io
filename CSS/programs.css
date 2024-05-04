@@ -1,0 +1,506 @@
+body {
+	animation: animationIn 0.5s ease-in-out;
+}
+
+@keyframes animationIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+/* NAVBAR */
+.navbar {
+	background-color: #0fa4cb;
+}
+
+.navbar .icon {
+	margin-left: 50px;
+}
+
+.navbar .icon img {
+	height: 30px;
+}
+
+.navbar .text {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	margin-top: 3px;
+}
+
+.nav-link.home h6 {
+	margin-right: 15px;
+	margin-top: 5px;
+	color: white;
+}
+
+.nav-link.chat img {
+	margin-right: 20px;
+	margin-top: 6px;
+	filter: saturate(20%);
+	opacity: 0.5;
+}
+
+.nav-link img {
+	height: 30px;
+}
+
+/* programs */
+.bg-pattern {
+	background-image: url(../img/double-bubble.png);
+	width: 100%;
+	padding: 50px 0px 0px 0px;
+}
+
+.bg-pattern .container {
+	width: 80%;
+	background-color: white;
+	box-shadow: 1px 1px 10px #0fa5cb5e;
+	border-radius: 10px;
+	padding: 60px;
+	margin-bottom: -10px;
+}
+
+h1.judul {
+	text-align: center;
+	color: #0fa4cb;
+	font-weight: 700;
+}
+
+h3.subjudul {
+	text-align: center;
+	color: grey;
+	font-weight: 700;
+	font-size: 30px;
+	margin-top: 25px;
+}
+
+h5.penulis {
+	color: orange;
+	font-weight: 700;
+	font-size: 18px;
+	margin-top: 45px;
+}
+
+h6.device {
+	font-size: 18px;
+	font-weight: 800;
+	color: rgb(161, 8, 8);
+}
+
+.bg-pattern .container p {
+	margin-top: 50px;
+	font-size: 16px;
+	text-align: justify;
+}
+
+.bg-pattern .container p.pse {
+	margin-top: 160px;
+}
+
+.bg-pattern .container ul {
+	margin-top: -25px;
+	font-size: 18px;
+}
+
+.bg-pattern .container span {
+	font-weight: bold;
+}
+
+.ilustrasi {
+	width: 100%;
+	height: 500px;
+	margin: 50px 0 100px 0;
+	text-align: center;
+}
+
+.ilustrasi figure img {
+	width: 100%;
+}
+
+.ilustrasi.ebook figure img {
+	width: 80%;
+}
+
+.ilustrasi.video figure img {
+	margin-top: -50px;
+	width: 80%;
+}
+
+.ilustrasi.game figure img {
+	margin: -70px 0px;
+	width: 55%;
+}
+
+.ilustrasi figure figcaption {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.ilustrasi.game figure figcaption {
+	margin-top: 90px;
+}
+
+.container h4 {
+	margin-top: 100px;
+	color: #0fa4cb;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.container .unduh {
+	display: flex;
+	justify-content: center;
+}
+
+.unduh .download {
+	text-align: center;
+}
+
+.unduh .download img {
+	width: 150px;
+}
+
+.unduh .download p {
+	color: orange;
+	margin-bottom: 25px;
+}
+
+.unduh .download a {
+	background-color: #0fa4cb;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	transition: 0.5s ease-in-out;
+}
+
+.unduh .download a:hover {
+	background-color: white;
+	border: 2px solid #0fa4cb;
+	color: #0fa4cb;
+}
+
+.sawer {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.saweria h5 {
+	font-size: 24px;
+	color: orange;
+}
+
+.saweria img {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.sawer a {
+	background-color: orange;
+	padding: 10px 35px 12px 35px;
+	border-radius: 50px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.sawer a:hover {
+	background-color: white;
+	color: orange;
+	border: 2px solid orange;
+}
+
+.traktir {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.trakteer h5 {
+	font-size: 24px;
+	color: maroon;
+}
+
+.trakteer img {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.traktir a {
+	background-color: maroon;
+	padding: 10px 35px 12px 35px;
+	border-radius: 50px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.traktir a:hover {
+	background-color: white;
+	color: maroon;
+	border: 2px solid maroon;
+}
+
+.ucapan h3 {
+	text-align: center;
+	margin-top: 150px;
+	color: green;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.copyright {
+	text-align: center;
+	color: white;
+	margin-top: -50px;
+}
+
+/* Tablet */
+@media screen and (max-width: 760px) {
+	.bg-pattern .container p.bm {
+		margin-top: -1240px;
+	}
+
+	.ilustrasi {
+		width: 100%;
+		margin: 10px 0 10px 0;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 720px) {
+	/* .container{
+       height: 800px;
+    } */
+
+	/* .bg-pattern{
+        padding-bottom: 8000px;
+    } */
+
+	/* NAVBAR */
+	.navbar .icon {
+		margin-left: 10px;
+	}
+
+	.navbar .icon img {
+		height: 30px;
+	}
+
+	.navbar .text {
+		font-size: 18px;
+	}
+
+	.nav-link.home {
+		margin-right: 10px;
+		margin-top: 3px;
+	}
+
+	/* programs */
+	.bg-pattern {
+		padding: 0px;
+	}
+
+	.bg-pattern .container {
+		width: 100%;
+		border-radius: 0px;
+		padding: 20px 30px;
+	}
+
+	h1.judul {
+		font-size: 18px;
+		font-weight: bold;
+		margin-top: 24px;
+	}
+
+	h3.subjudul {
+		text-align: center;
+		color: grey;
+		font-weight: 700;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+
+	h5.penulis {
+		color: orange;
+		font-weight: 700;
+		font-size: 10px;
+		margin-top: 25px;
+	}
+
+	h6.device {
+		font-size: 10px;
+		font-weight: 800;
+	}
+
+	.bg-pattern {
+		height: auto;
+	}
+
+	.bg-pattern .container p {
+		margin-top: 20px;
+		font-size: 12px;
+	}
+
+	.bg-pattern .container p.pse {
+		margin-top: -920px;
+	}
+
+	.bg-pattern .container p.pse2 {
+		margin-top: -300px;
+	}
+
+	.bg-pattern .container p.bm {
+		margin-top: -340px;
+	}
+
+	.bg-pattern .container ul {
+		margin-top: -10px;
+		font-size: 14px;
+	}
+
+	.ilustrasi {
+		width: 100%;
+		margin: 30px 0 100px 0;
+	}
+
+	.ilustrasi.video {
+		width: 100%;
+		margin: 0;
+	}
+
+	.ilustrasi figure img {
+		height: auto;
+	}
+
+	.ilustrasi.ebook figure img {
+		width: 100%;
+		margin-top: -10px;
+	}
+
+	.ilustrasi.video figure img {
+		margin-top: -520px;
+		width: 100%;
+	}
+
+	.ilustrasi.game figure img {
+		margin-top: -1100px;
+		width: 65%;
+	}
+
+	.ilustrasi figure figcaption {
+		font-size: 12px;
+	}
+
+	.ilustrasi.video figure figcaption {
+		margin-top: -150px;
+	}
+
+	.ilustrasi.game figure figcaption {
+		margin-top: -400px;
+	}
+
+	.container h4 {
+		margin-top: 40px;
+		color: #0fa4cb;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.unduh .download p {
+		color: orange;
+		margin-bottom: 25px;
+	}
+
+	.unduh .download a {
+		font-size: 14px;
+	}
+
+	.unduh .download a:hover {
+		background-color: white;
+		border: 2px solid #0fa4cb;
+		color: #0fa4cb;
+	}
+
+	.sawer {
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	.saweria h5 {
+		font-size: 14px;
+		color: orange;
+	}
+
+	.saweria img {
+		margin-top: 30px;
+		margin-bottom: 60px;
+	}
+
+	.sawer a {
+		background-color: orange;
+		padding: 10px 35px 12px 35px;
+		border-radius: 50px;
+		color: white;
+		font-size: 18px;
+		font-weight: bold;
+		text-decoration: none;
+		transition: 0.5s;
+	}
+
+	.traktir {
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	.trakteer h5 {
+		font-size: 14px;
+		color: maroon;
+	}
+
+	.trakteer img {
+		margin-top: 30px;
+		margin-bottom: 60px;
+	}
+
+	.traktir a {
+		background-color: maroon;
+		padding: 10px 35px 12px 35px;
+		border-radius: 50px;
+		color: white;
+		font-size: 18px;
+		font-weight: bold;
+		text-decoration: none;
+		transition: 0.5s;
+	}
+
+	.ucapan h3 {
+		text-align: center;
+		margin-top: 70px;
+		color: green;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	svg {
+		margin-top: 50px;
+		margin-bottom: -50px;
+		width: 100%;
+		height: auto;
+	}
+
+	.copyright {
+		font-size: 10px;
+		margin-top: 32px;
+		margin-bottom: -32px;
+	}
+}

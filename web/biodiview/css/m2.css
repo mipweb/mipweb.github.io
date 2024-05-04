@@ -1,0 +1,452 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #123a32;
+	font-family: "Poppins", sans-serif;
+}
+
+.header {
+	width: 100%;
+	height: fit-content;
+	padding: 25px 0 0 0;
+}
+
+.header .container {
+	width: 85%;
+	height: fit-content;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header .container img {
+	width: 250px;
+}
+
+.header .container .home a {
+	padding: 12px 12px 5px 12px;
+	background-color: white;
+	border-radius: 40px;
+}
+
+i {
+	font-size: 25px;
+	color: #123a32;
+	line-height: 90%;
+	font-weight: 800;
+}
+
+.hero {
+	width: 100%;
+	height: fit-content;
+}
+
+.hero .container {
+	width: 80%;
+	height: fit-content;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header .title {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: -30px;
+}
+
+.header .title h1 {
+	background-color: white;
+	padding: 5px;
+	border-radius: 20px;
+	width: 350px;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.header .desc {
+	width: 85%;
+	font-size: 14px;
+	font-weight: 200;
+	color: white;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.header .desc p {
+	text-align: center;
+}
+
+.header .desc p span {
+	font-weight: 600;
+	color: yellow;
+}
+
+.map {
+	width: 100%;
+	height: fit-content;
+	margin-top: 40px;
+}
+
+.map img {
+	width: 100%;
+}
+
+.caption {
+	margin-top: -100px;
+	margin-left: 80px;
+}
+
+.caption .container {
+	width: 200px;
+	height: 120px;
+	background-color: white;
+	border-radius: 10px;
+	background-image: url(../img/caption.jpg);
+	background-size: cover;
+}
+
+.caption .container .icon,
+.caption .container .txt {
+	display: flex;
+	justify-content: space-around;
+}
+
+.tugas {
+	margin-top: -160px;
+	margin-left: 80px;
+	position: absolute;
+	z-index: 2;
+}
+
+.btn-tugas button {
+	background-color: rgba(255, 255, 255, 0.803);
+	padding: 8px 20px;
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 800;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.btn-tugas button i {
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+.markers {
+	position: absolute;
+	left: 0;
+	top: 150px;
+	width: 100%;
+	height: 450px;
+}
+
+.markers .marker {
+	position: absolute;
+	transition: all 0.3s;
+}
+
+.markers .marker:hover {
+	transform: scale(1.2);
+}
+
+.markers .marker img {
+	height: 70px;
+}
+
+.hidden {
+	display: none;
+}
+.popup .container .btn-close.hidden {
+	display: none;
+}
+
+/* marker */
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.markers .marker.p-rt {
+	left: 11%;
+	top: 0.8rem;
+}
+.markers .marker.p-dt {
+	left: 14.5%;
+	top: 3.5rem;
+}
+.markers .marker.p-tb {
+	left: 27.5%;
+	top: 17rem;
+}
+.markers .marker.p-gp {
+	left: 33%;
+	top: 20rem;
+}
+.markers .marker.p-pp {
+	left: 36.5%;
+	top: 23rem;
+}
+.markers .marker.p-bl {
+	left: 42%;
+	top: 19.5rem;
+}
+.markers .marker.p-st {
+	left: 45%;
+	top: 22rem;
+}
+.markers .marker.p-sk {
+	left: 35%;
+	top: 7.8rem;
+}
+.markers .marker.p-hs {
+	left: 45.2%;
+	top: 6.8rem;
+}
+.markers .marker.p-pb {
+	left: 53.5%;
+	top: 12rem;
+}
+.markers .marker.p-rr {
+	left: 49%;
+	top: 18.5rem;
+}
+.markers .marker.p-wt {
+	left: 57.5%;
+	top: 17rem;
+}
+.markers .marker.p-nw {
+	left: 51.5%;
+	top: 24.8rem;
+}
+.markers .marker.p-pw {
+	left: 69.5%;
+	top: 16.5rem;
+}
+.markers .marker.p-ck {
+	left: 71%;
+	top: 8.8rem;
+}
+.markers .marker.p-pj {
+	left: 81.5%;
+	top: 14.6rem;
+}
+
+.popup {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.75);
+	left: 0;
+	top: 0;
+}
+
+.popup .btn-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: #123a32;
+	display: flex;
+	justify-content: center;
+	border-radius: 30px;
+	border: solid 3px white;
+	top: 2rem;
+	right: 16rem;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.popup .btn-close i {
+	font-size: 24px;
+	line-height: 32px;
+	color: white;
+}
+
+.popup .box {
+	position: absolute;
+	width: 60%;
+	height: 575px;
+	background-color: white;
+	left: 20%;
+	top: 7.5%;
+	border-radius: 18px;
+	font-family: "Poppins", sans-serif;
+}
+
+.popup .box .judul {
+	width: 100%;
+	height: fit-content;
+	border-bottom: solid 2px #123a32;
+	padding-bottom: 10px;
+}
+
+.popup .box .judul h1 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #123a32;
+	margin: 15px auto;
+	text-align: center;
+}
+
+.popup .box .judul p {
+	text-align: center;
+	font-size: 12px;
+	margin-top: -10px;
+}
+.popup .box .judul p span {
+	font-weight: bold;
+}
+
+.popup .box .gambar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.popup .box .gambar .foto {
+	width: 50%;
+	height: 380px;
+	overflow: scroll;
+}
+
+.popup .box .gambar .foto img {
+	width: 100%;
+}
+
+.popup .box .gambar .desk {
+	width: 50%;
+	height: 380px;
+	overflow: scroll;
+	padding-left: 5px;
+}
+
+.popup .box .gambar .desk img {
+	width: 100%;
+}
+
+.popup .box .gambar .foto::-webkit-scrollbar,
+.popup .box .gambar .desk::-webkit-scrollbar {
+	display: none;
+}
+
+.popup .box .rujukan {
+	width: 100%;
+	height: fit-content;
+	padding: 10px;
+	line-height: 12px;
+}
+
+.popup .box .rujukan h6 {
+	font-size: 10px;
+	font-weight: 600;
+}
+
+.popup .box .rujukan p {
+	font-size: 10px;
+}
+
+.konfirmasi {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.konfirmasi button {
+	background-color: green;
+	font-family: "Poppins", sans-serif;
+	font-size: 700;
+	color: white;
+	padding: 8px 15px;
+	border-radius: 8px;
+	transition: all 0.3s;
+}
+
+.konfirmasi button:hover {
+	background-color: rgb(4, 87, 4);
+	color: yellow;
+	transform: scale(1.1);
+}
+
+.desk#tugas {
+	padding: 0 12px;
+}
+
+.desk#tugas p {
+	font-size: 14px;
+	text-align: justify;
+}
+
+.desk#tugas p span {
+	font-weight: bold;
+}
+
+/* RESPONSIVE */
+/* Tablet */
+@media screen and (max-width: 768px) {
+	body {
+		width: 1400px;
+	}
+
+	.markers {
+		width: 1400px;
+	}
+
+	.popup {
+		width: 768px;
+		height: 1024px;
+		left: 50%;
+	}
+
+	.popup .box {
+		width: 80%;
+		height: 800px;
+		background-color: white;
+		left: 10%;
+		top: 7.5%;
+		border-radius: 18px;
+		font-family: "Poppins", sans-serif;
+	}
+
+	.popup .box .judul {
+		padding: 0 0.8rem 0.8rem;
+	}
+
+	.popup .btn-close {
+		top: 1rem;
+		right: 1rem;
+	}
+
+	.popup .box .gambar {
+		height: 560px;
+		flex-direction: column;
+		align-items: center;
+		overflow: scroll;
+	}
+
+	.popup .box .gambar .foto {
+		width: 90%;
+		height: fit-content;
+		overflow: visible;
+	}
+
+	.popup .box .gambar .desk {
+		width: 90%;
+		height: fit-content;
+		overflow: visible;
+		padding-left: 5px;
+	}
+}
+
+/* Tablet */
+@media screen and (max-width: 760px) {
+}

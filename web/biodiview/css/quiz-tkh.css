@@ -1,0 +1,324 @@
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/* MAIN */
+body {
+    background-color: #123A32;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container-all {
+    width: 85%;
+    height: 100vh;
+    background-image: url("../img/bg-m1.jpg");
+    background-size: cover;
+}
+
+.container-all .header{
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+}
+
+.container-all .header .home a{
+	padding: 12px 8px 5px 8px;
+	background-color: white;
+	border-radius: 40px;
+}
+
+i{
+    font-size: 25px;
+	color: #123A32;
+	line-height: 90%;
+	font-weight: 800;
+}
+
+.container-all .header img{
+	width: 200px;
+}
+
+
+.title{
+    width: 100%;
+    height: fit-content;
+}
+
+
+.title .txt{
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    background-color: #123A32;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+.title .txt i{
+    color: white;
+}
+
+.box{
+    width: 70%;
+    height: fit-content;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+.box .instruction{
+    width: 95%;
+    height: fit-content;
+    margin: 0 auto;
+    border-bottom: 2px solid #123A32;
+}
+
+.box .instruction h1{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+    color: #123A32;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.box .question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .question .img, .box .question .option{
+    width: 50%;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box .question .option h1{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1rem;
+}
+
+.box .question .img img{
+    width: 24rem;
+}
+
+.box .question .option button{
+    color: #123A32;
+    line-height: 18px;
+    transition: all .3s;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.box .question .option .btn {
+    width: 80%;
+    height: fit-content;
+    border: 2px solid #123A32;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.box .question .option .answers-btn{
+    margin-top: 20px;
+}
+
+.box .question .option .answers-btn .btn:hover:not([disabled]){
+    background-color: #266256;
+    color: white;
+}
+
+
+.box .question .option .answers-btn .btn:disabled{
+    cursor: no-drop;
+}
+
+.box .question #question-txt.txt-skor{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.box .question #question-txt span{
+    font-size: 54px;
+    color: rgb(255, 98, 0);
+}
+
+
+button, button i{
+    background-color: #123A32;
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border-radius: 10px;
+}
+
+#next-btn{
+    color: white;
+    display: block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.box .question .option .btn.incorrect{
+    background: rgb(202, 114, 128);
+    color: rgb(142, 3, 3);
+}
+
+.box .question .option .btn.correct{
+    background: rgb(85, 175, 211);
+    color: blue;
+}
+
+
+
+
+/* RESPONSIVE */
+/* Tablet */
+@media screen and (max-width: 768px){
+    .container-all {
+        width: 100%;
+    }
+
+    .title{
+        margin-top: 25px;
+    }
+
+    .box .question {
+        flex-direction: column;
+    }
+
+    .box .question .img, .box .question .option{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .box .question .img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .box .question .option .btn{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 760px){
+
+    .container-all{
+        margin-bottom: 150px;
+    }
+
+    .header .logo img{
+        width: 150px;
+    }
+
+    .box .question .img img{
+        width: 18rem;
+    }
+
+    .title{
+        width: 100%;
+        height: fit-content;
+        margin-top: 0;
+    }
+    
+    
+    .title .txt{
+        width: 300px;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 18px;
+        border-radius: 30px;
+    }
+
+    .title .txt i{
+        font-size: 16px;
+    }
+
+    .box{
+        width: 85%;
+        padding: 20px 10px;
+        border-radius: 15px;
+        margin: 20px auto;
+    }
+
+    .box .question .option .answers-btn .btn{
+        font-size: 12px;
+    }
+
+    
+}

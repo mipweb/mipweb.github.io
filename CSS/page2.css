@@ -1,0 +1,523 @@
+body{
+    animation:animationIn 0.5s ease-in-out;
+}
+
+
+
+@keyframes animationIn{
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* NAVBAR */
+.navbar .icon{
+    margin-left: 50px;
+}
+
+.navbar .icon img{
+    height: 30px;
+}
+
+.navbar .text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #0FA4CB;
+    margin-top: 3px;
+}
+
+.nav-link.home{
+    margin-right: 50px;
+    margin-top: 3px;
+}
+
+.nav-link.chat img{
+    margin-right: 20px;
+    margin-top: 6px;
+    filter: saturate(20%);
+    opacity: 0.5;
+}
+
+.nav-link img{
+    height: 30px;
+}
+
+
+
+
+
+/* CAROUSEL */
+.container-carousel{
+    width: 100%;
+    background-color: black;
+}
+
+/* change transition duration to control the speed of fade effect */
+.carousel-item {
+    transition: transform 2s ease-in-out;
+  }
+  
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 2s;
+  }
+
+
+
+
+/* PEMBATAS */
+.container-pembatas{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-bottom: 3px solid grey;
+}
+
+.container-pembatas h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px 90px;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* ITEM */
+.wadah-item{
+    height: 1800px;
+}
+
+.wadah-item .container-item{
+    width: 88%;
+    height: 680px;
+    margin: 0px auto;
+}
+
+.wadah-item .container-item .isi-item{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.wadah-item .container-item .list-items{
+    width: 220px;
+    height: 300px;
+    background-color: white;
+    /* border: 1px solid #0fa5cb93; */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.437);
+    margin-top: 50px;
+    margin-bottom: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.wadah-item .container-item .list-items:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #0fa5cba2;
+    border: 1px solid #0fa5cb93;
+}
+
+.container-item .list-items .kotak{
+    height: 75%;
+    background-color: grey;
+}
+
+.container-item .list-items .keterangan{
+    height: 20%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.list-items .keterangan .teks{
+    width: 90%;
+}
+
+
+.list-items .keterangan .teks .nama{
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(87, 87, 87);
+    line-height: 18px;
+}
+
+.list-items .keterangan .teks .waktu{
+    font-size: 10px;
+    color: grey;
+    margin: 9px 0 10px 0;
+}
+
+
+.list-items .keterangan .price{
+    width: 60px;
+    height: 25px;
+    border: 3px solid orange;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: 3px;
+}
+
+.list-items .keterangan .price h1{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    color: orange;
+}
+
+
+.btn-item{
+    text-decoration: none;
+}
+
+.container-item .isi-item .btn-item.kosong{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.btn-inactive{
+    filter: saturate(5%);
+    pointer-events: none;
+}
+
+.container-item .list-items .kotak{
+    background-image: url('../img/empty-item.png');
+    background-size: cover;
+}
+
+.container-item .list-items .kotak.item1{
+    background-image: url('../img/ekskresi.png');
+    background-size: cover;
+}
+
+.container-item .list-items .kotak.item2{
+    background-image: url('../img/lingkungan.png');
+    background-size: cover;
+}
+.container-item .list-items .kotak.item3{
+    background-image: url('../img/toga.png');
+    background-size: cover;
+}
+
+
+
+
+.container-footer img{
+    position: absolute;
+    margin-top: -120px;
+    width: 100%;
+}
+
+.container-footer .text-footer{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.container-footer .text-footer h5{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.txt p{
+    text-align: center;
+    color: #0FA4CB;
+}
+
+
+/* PAGE */
+nav.privacy-policy{
+    background-color: #0FA4CB;
+}
+
+nav.privacy-policy .text{
+    width: 70%;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.text-privacy{
+    width: 80%;
+    height: auto;
+    margin: 30px auto 0px;
+}
+
+.text-privacy h1,h2,h3{
+    color: #0FA4CB;
+}
+
+footer{
+    background-color: #0FA4CB;
+    padding-bottom: 20px;
+    margin-bottom: -30px;
+}
+
+footer .page{
+    color: white;
+    text-align: center;
+}
+
+footer .page a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer .page a.active{
+    color: #66c0d9;
+    text-decoration: none;
+}
+
+footer .copyright{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+/* Tablet */
+@media screen and (max-width: 990px){
+    
+    .wadah-item{
+    height: 2400px;
+    }
+    
+    .navbar .icon{
+        margin-left: 10px;
+    }
+
+    .navbar .icon img{
+        height: 25px;
+    }
+
+    .nav-link.home{
+        margin-right: 10px;
+    }
+
+    .navbar .text{
+        font-size: 20px;
+    }
+
+    .nav-link img{
+        height: 25px;
+    }
+
+
+
+
+
+    
+    .container-pembatas{
+        margin-top: 30px;
+        border-bottom: 3px solid grey;
+    }
+    
+    .container-pembatas h1{
+        font-size: 20px;
+        margin: 0px 85px;
+        color: grey;
+        margin-bottom: 10px;
+    }
+
+    .container-footer img{
+        margin-top: -50px;
+    }
+
+    .container-footer .text-footer{
+        padding-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 720px) {
+    .navbar .icon{
+        margin-left: 5px;
+    }
+    
+    .navbar .icon img{
+        height: 20px;
+    }
+    
+    .navbar .text{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: #0FA4CB;
+        margin-top: 5px;
+    }
+    
+    .nav-link.home{
+        margin-right: 5px;
+        margin-top: 3px;
+    }
+    
+    .nav-link.chat img{
+        margin-right: 10px;
+        margin-top: 10px;
+        filter: saturate(20%);
+        opacity: 0.5;
+    }
+    
+    .nav-link img{
+        height: 20px;
+    }
+    
+    
+    .container-pembatas{
+        margin-top: 18px;
+        border-bottom: 1px solid grey;
+        margin-bottom: 10px;
+    }
+    
+    .container-pembatas h1{
+        font-size: 12px;
+        margin: 0px 45px;
+        color: grey;
+        margin-bottom: 5px;
+    }
+
+
+    .container-carousel .carousel-indicators{
+        margin-bottom: -3px;
+    }
+
+    .container-carousel .carousel-indicators button{
+        width: 15px;
+        height: inherit 2px;
+    }
+
+
+    
+    .wadah-item .container-item{
+        width: 95%;
+        height: 680px;
+        margin: 0px auto;
+    }
+    
+    .wadah-item .container-item .list-items{
+        width: 150px;
+        height: 220px;
+        margin-top: 10px;
+    }
+
+    .list-items .keterangan .teks .nama{
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 12px;
+        margin-top: -5px;
+    }
+    
+    .list-items .keterangan .teks .waktu{
+        font-size: 8px;
+        color: grey;
+    }
+
+    .list-items .keterangan .price{
+        width: 55px;
+        height: 22px;
+        border: 1.5px solid orange;
+    }
+    
+    .list-items .keterangan .price h1{
+        font-size: 12px;
+    }
+
+    .container-footer img{
+        position: relative;
+        margin-top: -20px;
+        margin-bottom: -50px;
+        width: 100%;
+    }
+
+    .container-footer .isi-footer{
+        margin-top: -30px;
+    }
+
+
+
+
+    footer{
+        padding-bottom: 50px;
+    }
+
+    .text-privacy h1{
+        font-size: 18px;
+    }
+
+    .text-privacy h2{
+        font-size: 16px;
+    }
+
+    .text-privacy h3{
+        font-size: 14px;
+    }
+
+    .text-privacy p{
+        font-size: 12px;
+    }
+
+    nav.privacy-policy .text{
+        font-size: 14px;
+        width: 45%;
+    }
+
+    footer .page a{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    footer .copyright{
+        color: white;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    
+
+    .txt p{
+        margin-top: -80px;
+        font-size: 12px;
+    }
+
+    
+
+}

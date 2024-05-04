@@ -1,0 +1,238 @@
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/* CONTAINER */
+body {
+    background-color: #123A32;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 85%;
+    height: 100vh;
+    background-image: url("../img/bg-mm-biodiview.jpg");
+    background-size: cover;
+}
+
+.container .header{
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+}
+
+.container .header .home a{
+	padding: 12px 10px;
+	background-color: white;
+	border-radius: 40px;
+}
+
+i{
+    font-size: 20px;
+	color: #123A32;
+}
+
+.container .header img{
+	width: 200px;
+}
+
+.judul{
+	width: 100%;
+	height: auto;
+}
+
+.judul .text {
+	width: 300px;
+	height: 45px;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 30px;
+}
+
+.judul .text h1{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	color: #123A32;
+	line-height: 46px;
+}
+
+
+/* MENUS */
+.menus{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.menus .menu {
+	width: 80%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.menus .menu a {
+	text-decoration: none;
+	margin: 15px 0px;
+}
+
+.menus .menu a .opsi{
+	width: 220px;
+	height: 150px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 12px;
+	padding: 25px 20px 0;
+	transition: .5s;
+}
+
+.menus .menu a .opsi .icon{
+	text-align: center;
+}
+
+.menus .menu a .opsi i {
+	font-size: 80px;
+}
+
+.menus .menu a .opsi h6 {
+	font-size: 14px;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	color: #123A32;
+	margin-top: 25px;
+}
+
+.menus .menu .opsi:hover{
+	transform: scale(1.1);
+}
+
+
+
+
+/* RESPONSIVE */
+/* Tablet */
+@media screen and (max-width: 768px){
+	.container {
+		width: 100%;
+	}
+
+	.container .header{
+		padding: 45px;
+	}
+
+	.judul{
+		margin-top: 20px;
+	}
+
+	.menus{
+		margin-top: 20px;
+	}
+}
+
+
+/* Mobile */
+@media screen and (max-width: 760px){
+	.container .header{
+		padding: 25px;
+	}
+
+
+
+	.container .header .home a{
+		padding: 10px 8px;
+		background-color: white;
+		border-radius: 40px;
+	}
+	
+	i{
+		font-size: 18px;
+		color: #123A32;
+	}
+	
+	.container .header img{
+		width: 150px;
+	}
+
+
+
+	.judul .text {
+		width: 200px;
+		height: 35px;
+		margin: auto;
+	}
+	
+	.judul .text h1{
+		font-size: 14px;
+		text-align: center;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		color: #123A32;
+		line-height: 36px;
+	}
+
+
+
+	.menus{
+		margin-top: 10px;
+	}
+
+	.menu{
+		margin-bottom: 35px;
+	}
+
+}

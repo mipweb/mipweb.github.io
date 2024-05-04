@@ -1,0 +1,422 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #123a32;
+}
+
+.main {
+	width: 85%;
+	height: 640px;
+	margin: 0 auto;
+	padding-top: 1rem;
+	background-color: #123a32;
+	background-size: cover;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1rem;
+}
+
+.header .logo img {
+	width: 12rem;
+}
+
+.header .btn-back a {
+	background-color: white;
+	padding: 2px 12px;
+	color: #123a32;
+	font-size: 28px;
+	font-weight: 800;
+	border-radius: 30px;
+}
+
+.title {
+	width: 100%;
+	height: fit-content;
+	margin-top: -2.5rem;
+}
+
+.title .judul {
+	width: fit-content;
+	height: fit-content;
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 0.5rem 1.5rem;
+	border-radius: 30px;
+	margin: 0 auto;
+}
+
+.title .judul h1 {
+	font-size: 1rem;
+	color: #123a32;
+}
+
+.desc {
+	width: 85%;
+	font-size: 12px;
+	font-weight: 200;
+	color: white;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.desc p {
+	text-align: center;
+}
+
+.desc p span {
+	font-weight: 600;
+	color: yellow;
+}
+
+.hero {
+	width: 95%;
+	height: 460px;
+	margin: 0 auto;
+	border-radius: 15px;
+	margin-top: 25px;
+	padding: 0.8rem;
+}
+
+.hero .map {
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/peta-fauna.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+}
+
+.hero .map img {
+	position: absolute;
+}
+
+.hero .map img.zone1 {
+	width: 53%;
+	height: 67%;
+	opacity: 0;
+	left: 135px;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 20px 0 0 20px;
+}
+.hero .map img.zone2 {
+	width: 32%;
+	height: 66%;
+	left: 610px;
+	opacity: 0;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.hero .map img.zone3 {
+	width: 22%;
+	height: 67.5%;
+	left: 940px;
+	opacity: 0;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 0 20px 20px 0;
+}
+
+.hero .map img.zone1:hover,
+.hero .map img.zone2:hover,
+.hero .map img.zone3:hover {
+	opacity: 0.25;
+}
+
+.btn-tugas {
+	position: absolute;
+	margin-top: -5rem;
+}
+
+.btn-tugas .btn {
+	width: 200px;
+}
+
+.btn-tugas .btn button {
+	background-color: white;
+	padding: 8px 20px;
+	border: none;
+	border-radius: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #123a32;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.btn-tugas .btn button:hover {
+	transform: scale(1.1);
+}
+
+.hidden {
+	display: none;
+}
+.popup .container .btn-close.hidden {
+	display: none;
+}
+
+.popup {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.75);
+	left: 0;
+	top: 0;
+}
+
+.popup .btn-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: #123a32;
+	display: flex;
+	justify-content: center;
+	border-radius: 30px;
+	border: solid 3px white;
+	top: 2rem;
+	right: 15.8rem;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.popup .btn-close i {
+	font-size: 24px;
+	line-height: 32px;
+	color: white;
+}
+
+.popup .box {
+	position: absolute;
+	width: 60%;
+	height: 585px;
+	background-color: white;
+	left: 20%;
+	top: 8%;
+	border-radius: 18px;
+	font-family: "Poppins", sans-serif;
+}
+
+.popup .box .judul {
+	width: 100%;
+	height: fit-content;
+	border-bottom: solid 2px #123a32;
+}
+
+.popup .box .judul h1 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #123a32;
+	margin: 1rem auto;
+	text-align: center;
+}
+
+.popup .box .judul h1 span {
+	color: rgb(235, 126, 0);
+}
+
+.popup .box .gambar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 20px;
+}
+
+.popup .box .gambar .foto {
+	width: 100%;
+	height: 400px;
+	overflow: scroll;
+	padding-top: 5px;
+}
+
+.popup .box .gambar .foto::-webkit-scrollbar,
+.popup .box .gambar .desk::-webkit-scrollbar {
+	display: none;
+}
+
+.popup .box .gambar .foto .row1 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.popup .box .gambar .foto .row1 .col1 {
+	width: 50%;
+}
+.popup .box .gambar .foto .row1 .col2 {
+	width: 40%;
+	background-color: rgb(226, 232, 228);
+	padding: 1rem 1rem 1rem 2rem;
+	border-radius: 0.5rem;
+}
+
+.popup .box .gambar .foto p {
+	font-size: 16px;
+	text-align: justify;
+}
+
+.popup .box .gambar .foto p span {
+	font-weight: 800;
+}
+
+.popup .box .rujukan {
+	width: 100%;
+	height: fit-content;
+	padding: 0.2rem 2.1rem 0.8rem;
+	line-height: 15px;
+}
+
+.popup .box .rujukan h6 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.popup .box .rujukan p {
+	font-size: 12px;
+	margin-top: 0.5rem;
+}
+
+.popup .box .gambar .foto .col1 img {
+	width: 80%;
+}
+
+.popup .box .gambar .foto .row2 {
+	margin-top: 1.8rem;
+	padding: 1rem;
+}
+
+.popup .box .gambar .foto .row2 .img {
+	background-color: antiquewhite;
+	width: 100%;
+	height: 500px;
+}
+
+.popup .box .gambar .foto .row2 img {
+	width: 100%;
+}
+
+/* tugas */
+.konfirmasi {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.konfirmasi button {
+	background-color: green;
+	font-family: "Poppins", sans-serif;
+	font-size: 700;
+	color: white;
+	padding: 8px 15px;
+	border-radius: 8px;
+	transition: all 0.3s;
+	border: none;
+	cursor: pointer;
+}
+
+.konfirmasi button:hover {
+	background-color: rgb(4, 87, 4);
+	color: yellow;
+	transform: scale(1.1);
+}
+
+.desk#tugas {
+	padding: 0 12px;
+	width: 90%;
+}
+
+.desk#tugas p {
+	font-size: 14px;
+	text-align: justify;
+}
+
+.desk#tugas p span {
+	font-weight: bold;
+}
+
+.desk#tugas ol li {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 0.8rem;
+}
+
+/* RESPONSIVE */
+/* Tablet */
+@media screen and (max-width: 768px) {
+	body {
+		width: 1400px;
+	}
+
+	.popup {
+		width: 768px;
+		height: 1024px;
+		left: 50%;
+	}
+
+	.popup .box {
+		width: 80%;
+		height: 800px;
+		background-color: white;
+		left: 10%;
+		top: 7.5%;
+		border-radius: 18px;
+		font-family: "Poppins", sans-serif;
+	}
+
+	.popup .box .judul {
+		padding: 0 0.8rem 0.8rem;
+	}
+
+	.popup .btn-close {
+		top: 1rem;
+		right: 1rem;
+	}
+
+	.popup .box .gambar {
+		height: 600px;
+	}
+
+	.popup .box .gambar .foto {
+		height: 580px;
+	}
+
+	.hero .map img.zone1 {
+		width: 750px;
+		height: 440px;
+		opacity: 0%;
+		left: 135px;
+		cursor: pointer;
+		transition: 0.3s;
+		border-radius: 20px 0 0 20px;
+	}
+	.hero .map img.zone2 {
+		width: 445px;
+		height: 455px;
+		left: 625px;
+		opacity: 0%;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.hero .map img.zone3 {
+		width: 315px;
+		height: 475px;
+		left: 970px;
+		opacity: 0%;
+		cursor: pointer;
+		transition: 0.3s;
+		border-radius: 0 20px 20px 0;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 360px) {
+}

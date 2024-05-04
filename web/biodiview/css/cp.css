@@ -1,0 +1,214 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #123a32;
+}
+
+.main {
+	width: 80%;
+	height: 640px;
+	margin: 0 auto;
+	padding-top: 1rem;
+	background-image: url(../img/bg-m1.jpg);
+	background-size: cover;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 1.8rem;
+}
+
+.header .logo img {
+	width: 12rem;
+}
+
+.header .btn-back a {
+	background-color: white;
+	padding: 6px 10px;
+	color: #123a32;
+	font-size: 20px;
+	font-weight: 800;
+	border-radius: 30px;
+}
+
+.title {
+	width: 100%;
+	height: fit-content;
+	margin-top: -2.5rem;
+}
+
+.title .judul {
+	width: fit-content;
+	height: fit-content;
+	background-color: white;
+	padding: 0.5rem 1.5rem;
+	border-radius: 30px;
+	margin: 0 auto;
+}
+
+.title .judul h1 {
+	font-size: 1rem;
+	color: #123a32;
+}
+
+.hero {
+	width: 90%;
+	background-color: white;
+	border-radius: 1rem;
+	height: 32rem;
+	padding: 1.5rem 2.5rem;
+	display: flex;
+	justify-content: center;
+	margin: 2rem auto;
+}
+
+.hero .desc::-webkit-scrollbar {
+	display: none;
+}
+
+.hero .desc {
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
+
+.hero .desc h2 {
+	font-size: 1.2rem;
+	color: #123a32;
+	text-align: center;
+	margin: 0.5rem 0;
+}
+
+.hero .desc p {
+	font-size: 0.9rem;
+	text-align: justify;
+	margin: 0.5rem 0;
+}
+
+.hero .desc ol li {
+	font-size: 0.9rem;
+	text-align: justify;
+}
+
+.hero .desc .gambar {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 1.5rem 0;
+}
+
+.hero .desc .gambar img {
+	width: 70%;
+}
+
+.hero .desc p span,
+.hero .desc ol li span {
+	font-weight: 800;
+}
+
+span.red {
+	font-weight: bold;
+	color: red;
+}
+
+.hero .desc .sosmed {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	margin: 1rem;
+}
+
+.hero .desc .sosmed a i {
+	color: #123a32;
+	font-size: 4rem;
+	transition: 0.3s;
+}
+
+.hero .desc .sosmed a i:hover {
+	transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+/* Tablet */
+@media screen and (max-width: 768px) {
+	.main {
+		width: 100%;
+	}
+
+	.title {
+		margin-top: 0;
+	}
+
+	.hero {
+		height: 48rem;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 760px) {
+	.header .logo img {
+		width: 8.5rem;
+	}
+
+	.header .btn-back a {
+		background-color: white;
+		padding: 6px 10px;
+		color: #123a32;
+		font-size: 1rem;
+		font-weight: 800;
+		border-radius: 30px;
+	}
+
+	.title {
+		margin-top: 0.5rem;
+	}
+
+	.title .judul h1 {
+		font-size: 0.8rem;
+	}
+
+	.hero {
+		width: 90%;
+		border-radius: 0.8rem;
+		height: 36rem;
+		padding: 1rem 1.5rem;
+		display: flex;
+		justify-content: center;
+		margin: 1rem auto;
+	}
+
+	.hero .desc h2 {
+		font-size: 1rem;
+		color: #123a32;
+		text-align: center;
+		margin: 0.5rem 0;
+	}
+
+	.hero .desc p {
+		font-size: 0.8rem;
+		text-align: justify;
+		margin: 0.5rem 0;
+	}
+
+	.hero .desc ol li {
+		font-size: 0.8rem;
+		text-align: justify;
+	}
+
+	.hero .desc .gambar img {
+		width: 100%;
+	}
+
+	.hero .desc .sosmed a i {
+		font-size: 3rem;
+		margin: 1rem 0;
+	}
+}

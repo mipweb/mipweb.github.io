@@ -1,0 +1,673 @@
+body{
+    animation:animationIn 0.5s ease-in-out;
+    background-color: #0FA4CB;
+}
+
+
+
+@keyframes animationIn{
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* NAVBAR */
+.navbar{
+    position: relative;
+    z-index: 2;
+}
+
+.navbar .icon{
+    margin-left: 50px;
+}
+
+.navbar .icon img{
+    height: 30px;
+}
+
+
+.nav-link.home{
+    margin-right: 50px;
+    margin-top: 3px;
+    padding: 5px 15px;
+    border-radius: 7px;
+    background-color: #0FA4CB;
+    color: white;
+    font-weight: 500;
+    transition: 1s;
+}
+
+.nav-link.home:hover{
+    background-color: white;
+    color: #0FA4CB;
+}
+
+
+
+
+
+
+/* HERO */
+.hero1{
+    width: 100%;
+    height: 500px;
+    margin-top: -100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/hero-products-small.png");
+}
+.hero2{
+    width: 100%;
+    height: 500px;
+    margin-top: -100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/hero-desk-small.png");
+}
+.hero3{
+    width: 100%;
+    height: 500px;
+    margin-top: -100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/hero-web-small.png");
+}
+.hero4{
+    width: 100%;
+    height: 500px;
+    margin-top: -100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/hero-tools-small.png");
+}
+
+
+
+.hero1 .hero-img .text1 h1{
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+}
+.hero2 .hero-img .text1 h1{
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+}
+.hero3 .hero-img .text1 h1{
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+}
+.hero4 .hero-img .text1 h1{
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+.hero1 h6{
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+}
+.hero2 h6{
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+}
+.hero3 h6{
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+}
+.hero4 h6{
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+
+
+/* ITEM */
+.wadah-item{
+    height: auto;
+    position: relative;
+    margin-top: -100px;
+}
+
+.wadah-item .container-item{
+    width: 95%;
+    height: auto;
+    margin: 0px auto;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+.wadah-item .container-item .isi-item{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.wadah-item .container-item .list-items{
+    width: 220px;
+    height: 300px;
+    background-color: white;
+    /* border: 1px solid #0fa5cb93; */
+    box-shadow: 1px 1px 3px rgba(63, 181, 255, 0.5);
+    margin-bottom: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.wadah-item .container-item .list-items:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #0fa5cba2;
+    border: 1px solid #0fa5cb93;
+}
+
+.container-item .list-items .kotak{
+    height: 75%;
+    background-color: grey;
+}
+
+.container-item .list-items .keterangan{
+    height: 20%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.list-items .keterangan .teks{
+    width: 90%;
+}
+
+
+.list-items .keterangan .teks .nama{
+    font-size: 14px;
+    font-weight: 700;
+    /* color: rgb(87, 87, 87); */
+    color: #0FA4CB;
+    line-height: 18px;
+}
+
+.list-items .keterangan .teks .waktu{
+    font-size: 10px;
+    color: grey;
+    margin: 9px 0 10px 0;
+}
+
+
+.list-items .keterangan .price{
+    width: 60px;
+    height: 25px;
+    border: 2px solid orange;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+.list-items .keterangan .price h1{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    color: orange;
+}
+
+
+.btn-item{
+    text-decoration: none;
+}
+
+.container-item .isi-item .btn-item.kosong{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.btn-inactive{
+    filter: saturate(5%);
+    pointer-events: none;
+}
+
+.container-item .list-items{
+    border-radius: 10px;
+}
+
+.container-item .list-items .kotak{
+    background-image: url('../img/empty-item.png');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.container-item .list-items .kotak.item1{
+    background-image: url('../img/ekskresi.png');
+    background-size: cover;
+}
+
+.container-item .list-items .kotak.item2{
+    background-image: url('../img/lingkungan.png');
+    background-size: cover;
+}
+.container-item .list-items .kotak.item3{
+    background-image: url('../img/toga.png');
+    background-size: cover;
+}
+.container-item .list-items .kotak.item4{
+    background-image: url('../img/biodiview-logo.jpg');
+    background-size: cover;
+}
+
+.container-item .list-items .kotak.item5{
+    background-image: url('../img/indravlab01.png');
+    background-size: cover;
+}
+
+
+
+
+.container-footer img{
+    position: absolute;
+    margin-top: -120px;
+    width: 100%;
+}
+
+.container-footer .text-footer{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.container-footer .text-footer h5{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.txt p{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+
+/* PAGE */
+nav.privacy-policy{
+    background-color: #0FA4CB;
+}
+
+nav.privacy-policy .text{
+    width: 70%;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.text-privacy{
+    width: 80%;
+    height: auto;
+    margin: 30px auto 0px;
+}
+
+.text-privacy h1,h2,h3{
+    color: #0FA4CB;
+}
+
+footer{
+    background-color: #0FA4CB;
+    padding-bottom: 20px;
+    margin-bottom: -30px;
+}
+
+footer .page{
+    color: white;
+    text-align: center;
+}
+
+footer .page a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer .page a.active{
+    color: #66c0d9;
+    text-decoration: none;
+}
+
+footer .copyright{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+/* Tablet */
+@media screen and (max-width: 990px){
+    
+    .wadah-item{
+    height: 2400px;
+    }
+    
+    .navbar .icon{
+        margin-left: 10px;
+    }
+
+    .navbar .icon img{
+        height: 25px;
+    }
+
+    .nav-link.home{
+        margin-right: 10px;
+    }
+
+    .navbar .text{
+        font-size: 20px;
+    }
+
+    .nav-link img{
+        height: 25px;
+    }
+
+
+
+
+
+    
+    .container-pembatas{
+        margin-top: 30px;
+        border-bottom: 3px solid grey;
+    }
+    
+    .container-pembatas h1{
+        font-size: 20px;
+        margin: 0px 85px;
+        color: grey;
+        margin-bottom: 10px;
+    }
+
+    .container-footer img{
+        margin-top: -50px;
+    }
+
+    .container-footer .text-footer{
+        padding-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 720px) {
+    .navbar{
+        position: relative;
+        z-index: 2;
+    }
+    
+    .navbar .container-fluid{
+        margin-top: 5px;
+    }
+
+    .navbar .icon img{
+        height: 40px;
+    }
+    
+    
+    .nav-link.home{
+        margin-right: 10px;
+        margin-top: 3px;
+        padding: 5px 15px;
+        border-radius: 7px;
+        background-color: #0FA4CB;
+        color: white;
+        font-weight: 300;
+        transition: 1s;
+    }
+    
+    .nav-link.home:hover{
+        background-color: white;
+        color: #0FA4CB;
+    }
+    
+    
+    .container-pembatas{
+        margin-top: 18px;
+        border-bottom: 1px solid grey;
+        margin-bottom: 10px;
+    }
+    
+    .container-pembatas h1{
+        font-size: 12px;
+        margin: 0px 45px;
+        color: grey;
+        margin-bottom: 5px;
+    }
+
+
+
+
+
+
+
+    .hero1{
+        width: 100%;
+        height: 250px;
+        margin-top: -100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .hero2{
+        width: 100%;
+        height: 250px;
+        margin-top: -100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .hero3{
+        width: 100%;
+        height: 250px;
+        margin-top: -100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .hero4{
+        width: 100%;
+        height: 250px;
+        margin-top: -100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .hero1 h1{
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Nunito', sans-serif;
+        margin-top: 100px;
+    }
+    .hero2 h1{
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Nunito', sans-serif;
+        margin-top: 100px;
+    }
+    .hero3 h1{
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Nunito', sans-serif;
+        margin-top: 100px;
+    }
+    .hero4 h1{
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Nunito', sans-serif;
+        margin-top: 100px;
+    }
+    
+
+    .hero1 h6{
+        font-size: 10px;
+        font-weight: 400;
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+        margin-top: -10px;
+    }
+    .hero2 h6{
+        font-size: 10px;
+        font-weight: 400;
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+        margin-top: -10px;
+    }
+    .hero3 h6{
+        font-size: 10px;
+        font-weight: 400;
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+        margin-top: -10px;
+    }
+    .hero4 h6{
+        font-size: 10px;
+        font-weight: 400;
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+        margin-top: -10px;
+    }
+
+    
+
+
+
+
+
+
+
+    
+    .wadah-item{
+        margin-top: 0;
+        height: auto;
+    }
+    
+    .wadah-item .container-item{
+        width: 95%;
+        height: auto;
+        padding: 14px 3px;
+    }
+    
+    .wadah-item .container-item .list-items{
+        width: 150px;
+        height: 220px;
+        margin-top: 0px;
+    }
+
+    .list-items .keterangan .teks .nama{
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 12px;
+        margin-top: -5px;
+    }
+    
+    .list-items .keterangan .teks .waktu{
+        font-size: 8px;
+        color: grey;
+    }
+
+    .list-items .keterangan .price{
+        width: 55px;
+        height: 22px;
+        border: 1.5px solid orange;
+    }
+    
+    .list-items .keterangan .price h1{
+        font-size: 12px;
+    }
+
+    .container-footer img{
+        position: relative;
+        margin-top: -20px;
+        margin-bottom: -50px;
+        width: 100%;
+    }
+
+    .container-footer .isi-footer{
+        margin-top: -30px;
+    }
+
+
+
+
+    footer{
+        padding-bottom: 50px;
+    }
+
+    .text-privacy h1{
+        font-size: 18px;
+    }
+
+    .text-privacy h2{
+        font-size: 16px;
+    }
+
+    .text-privacy h3{
+        font-size: 14px;
+    }
+
+    .text-privacy p{
+        font-size: 12px;
+    }
+
+    nav.privacy-policy .text{
+        font-size: 14px;
+        width: 45%;
+    }
+
+    footer .page a{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    footer .copyright{
+        color: white;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    
+    .txt p{
+        font-size: 12px;
+    }
+
+    
+
+}

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Biodiview | Tipe Ekosistem</title>
+		<link rel="stylesheet" href="../css/m2.css" />
+		<link rel="stylesheet" href="../font-awesome/css/all.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<section class="header">
+			<div class="container">
+				<div class="img">
+					<img src="../img/biodiview-logo-w.png" alt="logo-biodiview" />
+				</div>
+				<div class="home">
+					<a href="../page/menus.html"
+						><i class="fa-solid fa-angle-left"></i
+					></a>
+				</div>
+			</div>
+			<div class="title">
+				<h1>Tipe Ekosistem di Indonesia</h1>
+			</div>
+			<div class="desc">
+				<p>
+					Di bawah ini merupakan beberapa tipe ekosistem yang ada di Indonesia,
+					baik ekosistem darat maupun air. Sebenarnya Indonesia memiliki sangat
+					banyak ekosistem di berbagai wilayah, namun kita akan mengambil
+					beberapa saja sebagai contoh.
+					<span
+						>Silakan klik pada logo lingkaran yang ada pada peta di bawah
+						ini!</span
+					>
+				</p>
+			</div>
+		</section>
+		<section class="hero">
+			<div class="container">
+				<div class="map">
+					<img
+						src="../img/peta-indonesia-w.png"
+						alt="keanekaragaman hayai indonesia" />
+				</div>
+			</div>
+		</section>
+		<section class="markers">
+			<div class="marker p-rt" id="p-rt">
+				<button id="btn-mark">
+					<img src="../img/mark-01.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-dt" id="p-dt">
+				<button id="btn-mark">
+					<img src="../img/mark-02.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-tb" id="p-tb">
+				<button id="btn-mark">
+					<img src="../img/mark-03.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-gp" id="p-gp">
+				<button id="btn-mark">
+					<img src="../img/mark-04.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-pp" id="p-pp">
+				<button id="btn-mark">
+					<img src="../img/mark-05.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-bl" id="p-bl">
+				<button id="btn-mark">
+					<img src="../img/mark-06.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-st" id="p-st">
+				<button id="btn-mark">
+					<img src="../img/mark-07.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-sk" id="p-sk">
+				<button id="btn-mark">
+					<img src="../img/mark-08.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-hs" id="p-hs">
+				<button id="btn-mark">
+					<img src="../img/mark-09.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-pb" id="p-pb">
+				<button id="btn-mark">
+					<img src="../img/mark-10.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-rr" id="p-rr">
+				<button id="btn-mark">
+					<img src="../img/mark-11.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-wt" id="p-wt">
+				<button id="btn-mark">
+					<img src="../img/mark-12.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-nw" id="p-nw">
+				<button id="btn-mark">
+					<img src="../img/mark-13.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-pw" id="p-pw">
+				<button id="btn-mark">
+					<img src="../img/mark-14.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-ck" id="p-ck">
+				<button id="btn-mark">
+					<img src="../img/mark-15.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+			<div class="marker p-pj" id="p-pj">
+				<button id="btn-mark">
+					<img src="../img/mark-16.png" alt="tipe-ekosistem-indonesia" />
+				</button>
+			</div>
+		</section>
+		<section class="tugas">
+			<div class="btn-tugas" id="btn-tugas">
+				<button>
+					<i class="fa-solid fa-diagram-project"></i> Kerjakan Tugas
+				</button>
+			</div>
+		</section>
+		<section class="caption">
+			<div class="container"></div>
+		</section>
+		<section class="popup hidden" id="popup">
+			<div class="container">
+				<div class="btn-close" id="btn-close">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+				<div class="box hidden" id="b-rt">
+					<div class="judul">
+						<h1>Rawa Tripa</h1>
+						<p>
+							Kecamatan Darul Makmur Kabupaten Nagan Raya dan di Kecamatan
+							Babahrot, Kabupaten Aceh Barat Daya, <span>Aceh</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto1.jpg" alt="rawa tripa aceh" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk1.jpg"
+								alt="flora fauna rawa tripa aceh" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Aceh Insight TV. (2011). Rawa Tripa, Pusat Keanekaragaman Hayati
+							Yang Harus Diselamatkan. Januari, 17.
+							https://acehinsight.wwf.id/2011/01/17/rawa-tripa-pusat-keanekaragaman-hayati-yang-harus-diselamatkan/
+						</p>
+						<p>
+							Yulisma, A., & Fathiya, N. (2023). Studi Literatur Keanekaragaman
+							Hayati Tumbuhan Asli Rawa Tripa yang Berpotensi Sebagai Tumbuhan
+							Obat. Jurnal Serambi Engineering, VIII(3), 6654–6663.
+							https://ojs.serambimekkah.ac.id/jse/article/view/6482
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-dt">
+					<div class="judul">
+						<h1>Danau Toba</h1>
+						<p>Sumatera Utara,<span>Sumatra</span></p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto2.jpg" alt="Danau Toba (Lake Toba)" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk2.jpg"
+								alt="flora fauna Danau Toba (Lake Toba)" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							laketoba.com. (n.d.). Lake Toba Flora.
+							https://www.laketoba.com/lake-toba-flora/
+						</p>
+						<p>
+							Tim Ensiklopedia Dunia Univ. STEKOM. (n.d.). Danau Toba.
+							https://p2k.stekom.ac.id/ensiklopedia/Danau_Toba
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-tb">
+					<div class="judul">
+						<h1>Teluk Banten</h1>
+						<p>Sumatera Utara,<span>Sumatra</span></p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto3.jpg" alt="Danau Toba (Lake Toba)" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk3.jpg"
+								alt="flora fauna Danau Toba (Lake Toba)" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							laketoba.com. (n.d.). Lake Toba Flora.
+							https://www.laketoba.com/lake-toba-flora/
+						</p>
+						<p>
+							Tim Ensiklopedia Dunia Univ. STEKOM. (n.d.). Danau Toba.
+							https://p2k.stekom.ac.id/ensiklopedia/Danau_Toba
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-gp">
+					<div class="judul">
+						<h1>Gumuk pasir</h1>
+						<p>
+							Jl. Gumuk Pasir, Depok, Parangtritis, Kec. Kretek, Kabupaten
+							Bantul, <span>Daerah Istimewa Yogyakarta</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto4.jpg" alt="Gumuk Pasir" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk4.jpg"
+								alt="flora fauna gumuk pasir" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Badan Informasi Geospasial (BIG). (2017). Mengenal Gumuk Pasir
+							Lebih Dekat. In Badan Informasi Geospasial (Issue June 2017).
+							Badan Informasi Geospasial (BIG).
+							https://www.researchgate.net/profile/Edwin_Maulana2/publication/333972121_Mengenal_Gumuk_Pasir_Parangtritis_Lebih_Dekat/<br />links/5d10524d458515c11cf2e901/Mengenal-Gumuk-Pasir-Parangtritis-Lebih-Dekat.pdf
+						</p>
+						<p>
+							Qurniawan, T. F., & Eprilurahman, R. (2013). Keragaman Jenis
+							Amfibi dan Reptil Gumuk Pasir, Propinsi Daerah Istimewa
+							Yogyakarta. Zoo Indonesia: Jurnal Fauna Tropika, 22(2), 9–16.
+							http://www.mzi.or.id/%0Ahttp://www.mzi.or.id/
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-pp">
+					<div class="judul">
+						<h1>Pantai Parang Dowo</h1>
+						<p>
+							Desa Gajahrejo kecamatan Gedangan kabupaten <span>Malang</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto5.jpg" alt="pantai parang dowo" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk5.jpg"
+								alt="flora fauna pantai parang dowo" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Astuti, L. (2019). Afinitas Antar Spesies dan Klasifikasi
+							Komunitas Echinodermata di Kawasan Pantai Parang Dowo Kabupaten
+							Malang dimanfaatkan sebagai kajian Sumber Belajar Biologi
+							[University of Muhammadiyah Malang].
+							https://eprints.umm.ac.id/55461/
+						</p>
+						<p>
+							kacamatawisata. (2016). Pantai Parangdowo Malang Selatan. July.
+							http://kacamatawisata.blogspot.com/2016/07/pantai-parang-dowo-malang-selatan.html
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-bl">
+					<div class="judul">
+						<h1>Savana Bekol</h1>
+						<p>
+							Jalan raya Situbondo-Banyuwangi Km 35, Banyuputih, Situbondo,
+							<span>Jawa Timur</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto6.jpg" alt="savana bekol" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk6.jpg"
+								alt="flora fauna savana bekol" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Maulana, N. D. (2018). Apa saja flora dan fauna yang ada di Taman
+							Nasional Baluran? April.
+							https://www.dictio.id/t/apa-saja-flora-dan-fauna-yang-ada-di-taman-nasional-baluran/67238
+						</p>
+						<p>
+							Octavia, D., Andriani, S., Qirom, M. A., & Azwar, F. (2008).
+							Keanekaragaman Jenis Tumbuhan Sebagai Pestisida Alami Di Savana
+							Bekol Taman Nasional Baluran. Jurnal Penelitian Hutan Dan
+							Konservasi Alam, 5(4), 355–365.
+							https://doi.org/10.20886/jphka.2008.5.4.355-365
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-st">
+					<div class="judul">
+						<h1>Savana Tianyar</h1>
+						<p>
+							Kecamatan Kubu, Kabupaten Karangasem,
+							<span>Bali</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto7.jpg" alt="savana tianyar" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk7.jpg"
+								alt="flora fauna savana tianyar" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							K, D. (2023). Menikmati Ketenangan Di Padang Savana Tianyar.
+							February 8.
+							https://www.funtripfamily.com/ketenangan-di-padang-savana-tianyar/
+						</p>
+						<p>
+							Marliah, S. (2023). 10 Potret Savanna Tianyar Bali, Jadi Lokasi
+							Syuting MV TXT. January 28.
+							https://www.idntimes.com/travel/destination/lia-89/potret-savanna-tianyar-bali-c1c2?page=all
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-sk">
+					<div class="judul">
+						<h1>Sungai Kapuas</h1>
+						<p>
+							<span>Kalimantan Barat</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto8.jpg" alt="sungai kapuas" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk8.jpg"
+								alt="flora fauna sungai kapuas" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Dinas Komunikasi Informatika Dan Statistik | Kabupaten Kapuas
+							Hulu. (2023). Potensi Unggulan Kabupaten Kapuas Hulu.
+							https://www.kapuashulukab.go.id/home/page/taman-nasional.
+						</p>
+						<p>
+							Hartanto, A., Padmarsari, W., & Rahayu, S. (2021). Keanekaragaman
+							Vegetasi Riparian Di Daerah Aliran Sungai Kapuas Desa Radak Satu
+							Kabupaten Kubu Raya. Jurnal Pertanian Sains Equator.
+							https://jurnal.untan.ac.id/index.php/jspp/article/view/51263.
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-hs">
+					<div class="judul">
+						<h1>Sangkima Jungle Park (SJP)</h1>
+						<p>
+							Desa Sangkima Lama Kecamatan Sangatta Selatan, Kabupaten Kutai
+							Timur, <span>Kalimantan Timur</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img
+								src="../img/map-te/foto9.jpg"
+								alt="Sangkima Jungle Park (SJP)" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk9.jpg"
+								alt="flora fauna Sangkima Jungle Park (SJP)" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Kadyonggo, E. (2023). Sangkima, Surga Hutan Hujan Tropis di
+							Kalimantan. May, 30.
+							https://pustek.menlhk.go.id/aktivitas/sangkima-surga-hutan-hujan-tropis-di-kalimantan#:~:text=Dari
+							tempat ini%2C wisatawan juga,sanca%2C dan lain-lain.
+						</p>
+						<p>
+							Wahyudi, A., Susanty, F. H., & Lesta, N. S. (2017). Keragaman
+							Jenis Vegetasi pada Hutan Bekas Kebakaran di Taman Nasional Kutai,
+							Kalimantan Timur. Jurnal Penelitian Sosial Dan Ekonomi Kehutanan,
+							1, 1–14.
+							https://doi.org/https://dx.doi.org/10.20886/jped.2017.3.2.95-102
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-pb">
+					<div class="judul">
+						<h1>Pantai Bunaken</h1>
+						<p>
+							<span>Sulawesi Utara</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto10.jpg" alt="Pantai Bunaken" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk10.jpg"
+								alt="flora fauna Pantai Bunaken" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Assa, J. D., Wagey, B. T., & Boneka, F. B. (2015). Jenis-Jenis
+							Ikan Di Padang Lamun Pantai Tongkaina. Jurnal Pesisir Dan Laut
+							Tropis, 3(2), 53. https://doi.org/10.35800/jplt.3.2.2015.10852
+						</p>
+						<p>
+							Bunaken National Park. (2022). Mengenal Padang Lamun. May, 27.
+							https://tn-bunaken.com/2022/05/27/mengenal-padang-lamun/
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-wt">
+					<div class="judul">
+						<h1>Pantai Wakatobi</h1>
+						<p>
+							<span>Sulawesi Tenggara</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto11.jpg" alt="Pantai Wakatobi" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk11.jpg"
+								alt="flora fauna Pantai Wakatobi" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Charita, A. (2020). Kondisi dan Karakteristik Ekosistem Terumbu
+							Karang di Taman Nasional Wakatobi, Sulawesi Tenggara. Mart, 25.
+							https://www.kompasiana.com/amabellacharita5637/5e7b4807097f36045a01eae2/kondisi-dan-karakteristik-ekosistem-terumbu-karang-di-taman-nasional-wakatobi-sulawesi-tenggara.
+						</p>
+						<p>
+							Tarigan, R. K. B. (2019). Kondisi Terumbu Karang Di Perairan Mari
+							Mabuk Taman Nasional Laut Wakatobi Kabupaten Wakatobi.
+							http://etd.repository.ugm.ac.id/penelitian/detail/171598.
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-rr">
+					<div class="judul">
+						<h1>Rammang-rammang</h1>
+						<p>
+							Desa Salanrang Kecamatan Bontoa kabupaten Maros provinsi
+							<span>Sulawesi selatan</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto12.jpg" alt="Pantai Wakatobi" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk12.jpg"
+								alt="flora fauna Pantai Wakatobi" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Hajramurni, A. (2022). Menjaga Karst, Menjaga Keanekaragaman
+							Hayati Rammang-rammang. June, 6.
+							https://www.mongabay.co.id/category/sosial/.
+						</p>
+						<p>
+							Mappong, S. (2022). Rammang-Rammang kaya dengan keanekaragaman
+							hayati. February, 10.
+							https://www.antaranews.com/berita/2697309/rammang-rammang-kaya-dengan-keanekaragaman-hayati.
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-nw">
+					<div class="judul">
+						<h1>Pantai Nihiwatu</h1>
+						<p>
+							Sumba Barat, Provinsi
+							<span>Nusa Tenggara Timur (NTT)</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto13.jpg" alt="Pantai Nihiwatu" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk13.jpg"
+								alt="flora fauna Pantai Nihiwatu" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Agriani, D. (2019). Pantai Nihiwatu, Surga yang Belum Tersentuh.
+							May, 19.
+							https://bandungberita.com/pantai-nihiwatu-surga-yang-belum-tersentuh/
+						</p>
+						<p>
+							Primantono, V. (n.d.). Pantai Nihiwatu.
+							https://www.garispantai.com/pantai-nihiwatu/
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-pw">
+					<div class="judul">
+						<h1>Palung Banda (Weber)</h1>
+						<p>
+							Laut banda,
+							<span>Kepulauan Maluku</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto14.jpg" alt="Palung Weber" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk14.jpg"
+								alt="flora fauna Palung Weber" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Lestari, K. (2019). Mengenal Laut Banda, Tempat Palung Paling
+							Dalam Di Indonesia. November 23.
+							https://ilmugeografi.com/ilmu-bumi/laut/laut-banda.
+						</p>
+						<p>
+							Rpermana. (2020). Palung Weber: Palung Terdalam Indonesia yang
+							Penuh Misteri. May 4.
+							https://www.kapalaku.com/index.php?threads/palung-weber-palung-terdalam-indonesia-yang-penuh-misteri.7294/.
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-ck">
+					<div class="judul">
+						<h1>Cape Kri</h1>
+						<p>
+							Yenbuba, Meos Mansar,Raja Ampat,
+							<span>Papua Barat</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto15.jpg" alt="cape kri" />
+						</div>
+						<div class="desk">
+							<img src="../img/map-te/desk15.jpg" alt="flora fauna cape kri" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Inasis, G. V., & Novianti, A. (2019). Surga Snorkeling di Raja
+							Ampat Itu Bernama Pulau Kri. November 12.
+							https://kumparan.com/kumparantravel/surga-snorkeling-di-raja-ampat-itu-bernama-pulau-kri-1sEmHFovrPx/full
+						</p>
+						<p>
+							Indonesia Kaya. (n.d.). Surga Bawah Laut Dunia Adalah Raja Ampat.
+							https://indonesiakaya.com/pustaka-indonesia/surga-bawah-laut-dunia-adalah-raja-ampat/
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="b-pj">
+					<div class="judul">
+						<h1>Pegunungan Jayawijaya</h1>
+						<p>
+							Kabupaten Mimika, Provinsi
+							<span>Papua Tengah</span>
+						</p>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/map-te/foto16.jpg" alt="pegunungan jayawijaya" />
+						</div>
+						<div class="desk">
+							<img
+								src="../img/map-te/desk16.jpg"
+								alt="flora fauna pegunungan jayawijaya" />
+						</div>
+					</div>
+					<div class="rujukan">
+						<h6>Sumber referensi:</h6>
+						<p>
+							Azzahra, K. L. (2022). Keanekaragaman Hayati Pada Ekosistem Bioma
+							Tundra di Taman Nasional Lorentz. June 11.
+							https://kumparan.com/kanisyaazzahra21/keanekaragaman-hayati-pada-ekosistem-bioma-tundra-di-taman-nasional-lorentz-1yFEjcQBSSG/full
+						</p>
+						<p>
+							Vincentius, M. A. (2023). Bioma Tundra. August 15.
+							https://www.kompasiana.com/mbalpin/64db6f4b4addee40e0526912/bioma-tundra
+						</p>
+					</div>
+				</div>
+				<div class="box hidden" id="box-tugas">
+					<div class="judul">
+						<h1>Tugas 02 Tipe Ekosistem</h1>
+					</div>
+					<div class="gambar">
+						<div class="foto">
+							<img src="../img/fotografer.gif" alt="memotret alam" />
+						</div>
+						<div class="desk" id="tugas">
+							<p>
+								Kita sudah mengetahui bahwa ada berbagai macam ekosistem di
+								seluruh wilayah Indonesia. Berbagai tipe ekosistem skala kecil
+								juga sebenarnya bisa kita temui di lingkungan sekitar kita.
+								<br />
+								<br />
+								Sekarang tugas Anda adalah
+								<span
+									>mengambil gambar/memfoto ekosistem yang ada di sekitar,
+									menggunakan Smartphone Anda.</span
+								><br /><br />
+								Ekosistem yang bisa anda foto adalah ekosistem kecil contohnya
+								seperti ekosistem taman, kolam, sawah, kebun, sungai dll.
+								<br />
+								<br />
+								<span
+									>Simpan foto Anda baik-baik karena nanti akan digunakan di
+									tugas 3. <br /><br />
+									Selamat Mengerjakan!</span
+								>
+							</p>
+						</div>
+					</div>
+					<div class="konfirmasi">
+						<button id="btn-ok">Mengerti & Siap Kerjakan!</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="../js/mp-tp.js"></script>
+	</body>
+</html>

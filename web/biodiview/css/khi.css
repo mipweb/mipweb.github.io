@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #123a32;
+}
+
+.main {
+	width: 80%;
+	height: 100vh;
+	margin: 0 auto;
+	padding-top: 1rem;
+	background-image: url(../img/bg-khi.jpg);
+	background-size: cover;
+}
+
+.gif {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	top: 38%;
+	left: 0;
+	padding: 0 5rem;
+}
+
+.gif img {
+	width: 460px;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2rem;
+}
+
+.header .logo img {
+	width: 20rem;
+}
+
+.header .btn-back a {
+	background-color: white;
+	padding: 2px 14px;
+	color: #123a32;
+	font-size: 36px;
+	font-weight: 800;
+	border-radius: 30px;
+}
+
+.title {
+	width: 100%;
+	height: fit-content;
+}
+
+.title .judul {
+	width: fit-content;
+	height: fit-content;
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 0.8rem 2.8rem;
+	border-radius: 30px;
+	margin: 0 auto;
+}
+
+.title .judul h1 {
+	font-size: 1.8rem;
+	color: #123a32;
+}
+
+.options {
+	width: 100%;
+	height: fit-content;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	gap: 4rem;
+	padding: 0 18rem;
+	top: 24%;
+	left: 0;
+}
+
+.options a {
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.options a:hover {
+	transform: scale(1.1);
+}
+
+.options .option {
+	width: 24rem;
+	height: 24rem;
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	border-radius: 20px;
+}
+
+.options .option img {
+	height: 14rem;
+}
+
+.options .option h6 {
+	font-size: 24px;
+	color: #123a32;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* RESPONSIVE */
+/* Tablet */
+@media screen and (max-width: 768px) {
+	.main {
+		width: 100%;
+	}
+
+	.gif {
+		width: 100%;
+		top: 50%;
+	}
+
+	.gif img {
+		width: 20rem;
+	}
+
+	.header {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 1 2rem;
+	}
+
+	.header .logo img {
+		width: 14rem;
+	}
+
+	.header .btn-back a {
+		padding: 2px 12px;
+		font-size: 1.8rem;
+	}
+
+	.title .judul {
+		padding: 0.5rem 1.8rem;
+		margin-top: 2rem;
+	}
+
+	.title .judul h1 {
+		font-size: 1.5rem;
+	}
+
+	.options {
+		padding: 0 auto;
+		top: 20%;
+		display: flex;
+		gap: 2rem;
+	}
+
+	.options .option {
+		width: 15rem;
+		height: 15rem;
+		padding: 2rem;
+	}
+
+	.options .option img {
+		height: 7rem;
+	}
+
+	.options .option h6 {
+		font-size: 0.8rem;
+		margin-top: 20px;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 760px) {
+	.header .logo img {
+		width: 12rem;
+	}
+
+	.header .btn-back a {
+		padding: 2px 12px;
+		font-size: 1.4rem;
+	}
+
+	.gif {
+		width: 100%;
+		top: 34rem;
+	}
+
+	.gif img {
+		width: 10rem;
+	}
+
+	.title .judul h1 {
+		font-size: 0.8rem;
+	}
+
+	.options {
+		padding: 0 8rem;
+		top: 20%;
+		left: 0;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.options .option {
+		width: 15rem;
+		height: 11rem;
+		background-color: rgba(255, 255, 255, 0.75);
+		padding: 1rem;
+	}
+
+	.options .option img {
+		height: 6rem;
+	}
+
+	.options .option h6 {
+		font-size: 14px;
+		margin-top: 20px;
+		margin-top: 0.5rem;
+	}
+}

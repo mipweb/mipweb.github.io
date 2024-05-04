@@ -1,0 +1,15 @@
+google.com, pub-3682663417674989, DIRECT, f08c47fec0942fa0
+
+//ADSTERRA
+<script type='text/javascript' src='//pl20590295.highcpmrevenuegate.com/bc/4d/66/bc4d66df8cafe2ed29dc90f3f925e5c1.js'></script>
+
+<script type="text/javascript">
+	atOptions = {
+		'key' : '85fb2a27b973835bcd2a90c35433aa17',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.profitablecreativeformat.com/85fb2a27b973835bcd2a90c35433aa17/invoke.js"></scr' + 'ipt>');
+</script>

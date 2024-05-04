@@ -1,0 +1,401 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #123a32;
+}
+
+.main {
+	width: 80%;
+	height: 640px;
+	margin: 0 auto;
+	padding-top: 1rem;
+	background-image: url(../img/bg-khi.jpg);
+	background-size: cover;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 1.8rem;
+}
+
+.header .logo img {
+	width: 12rem;
+}
+
+.header .btn-back a {
+	background-color: white;
+	padding: 2px 12px;
+	color: #123a32;
+	font-size: 28px;
+	font-weight: 800;
+	border-radius: 30px;
+}
+
+.title {
+	width: 100%;
+	height: fit-content;
+	margin-top: -2.5rem;
+}
+
+.title .judul {
+	width: fit-content;
+	height: fit-content;
+	background-color: white;
+	padding: 0.5rem 1.5rem;
+	border-radius: 30px;
+	margin: 0 auto;
+}
+
+.title .judul h1 {
+	font-size: 1rem;
+	color: #123a32;
+}
+
+.hero {
+	width: 100%;
+	position: relative;
+}
+
+.hero .container {
+	position: relative;
+	width: 100%;
+}
+
+.hero .container .eagle {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: -1rem;
+	padding: 0 2rem;
+}
+
+.hero .container .moose {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0;
+	padding: 0 4.5rem;
+}
+
+.hero .container .eagle img {
+	width: 150px;
+}
+
+.hero .container .moose img {
+	width: 300px;
+}
+
+/* swiper */
+.content {
+	position: absolute;
+	width: 100%;
+	height: fit-content;
+	top: 2rem;
+	left: 0;
+}
+
+.content .box {
+	width: 70%;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+}
+
+.content .box .content-swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.content .box .content-swiper .box-content {
+	width: 80%;
+	height: 32rem;
+	background-color: rgba(255, 255, 255, 0.85);
+	border-radius: 1rem;
+	padding: 0 1.5rem 2.2rem;
+}
+
+.content .box .box-content .main-content {
+	width: 100%;
+	height: fit-content;
+	margin-top: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content .box .box-content .main-content h1 {
+	font-size: 1.2rem;
+	color: #123a32;
+	text-align: center;
+}
+
+.content .box .box-content .main-content h1 span {
+	color: orange;
+}
+
+.content .box .box-content .main-content img {
+	width: 32rem;
+	margin: 0.5rem auto;
+}
+
+.content .box .box-content .main-content p {
+	font-size: 0.8rem;
+	text-align: center;
+	margin-top: 0.5rem;
+}
+
+.content .box .box-content .main-content p span {
+	font-weight: 800;
+}
+
+.content .box .box-content .main-content h6 {
+	font-size: 0.8rem;
+	color: #123a32;
+	margin-top: 1rem;
+}
+
+.content .box .box-content .main-content ol {
+	padding: 0 2.5rem;
+	margin-top: 0.5rem;
+}
+
+.content .box .box-content .main-content ol li {
+	font-size: 0.8rem;
+	text-align: justify;
+}
+
+.content .box .box-content .main-content a {
+	text-decoration: none;
+	font-size: 0.8rem;
+	color: white;
+	background-color: rgb(6, 162, 6);
+	padding: 0.3rem 1.2rem;
+	border-radius: 0.2rem;
+	margin-top: 1rem;
+}
+
+.content .box .box-content .main-content a:hover {
+	background-color: rgb(3, 122, 3);
+	color: yellow;
+}
+
+.swiper {
+	width: 600px;
+	height: 300px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	width: 50px;
+	height: 50px;
+	background-color: #12594b;
+	border-radius: 30px;
+}
+
+.swiper-button-prev {
+	left: 5px;
+}
+
+.swiper-button-next {
+	right: 5px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	font-size: 24px;
+	font-weight: 900;
+	color: white;
+}
+
+.swiper-pagination-bullet {
+	background-color: white;
+	border: 2px solid #123a32;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #123a32;
+}
+
+/* RESPONSIVE */
+/* Tablet */
+@media screen and (max-width: 768px) {
+	.main {
+		width: 100%;
+	}
+
+	.header {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 0.5rem 1.8rem;
+	}
+
+	.header .logo img {
+		width: 10rem;
+	}
+
+	.header .btn-back a {
+		background-color: white;
+		padding: 2.8px 11px;
+		color: #123a32;
+		font-size: 1.2rem;
+		font-weight: 800;
+		border-radius: 30px;
+	}
+
+	.title {
+		width: 100%;
+		height: fit-content;
+		margin-top: 0;
+	}
+
+	.title .judul {
+		width: fit-content;
+		height: fit-content;
+		background-color: white;
+		padding: 0.5rem 1.5rem;
+		border-radius: 30px;
+		margin: 0 auto;
+	}
+
+	.title .judul h1 {
+		font-size: 0.8rem;
+		color: #123a32;
+	}
+
+	.hero {
+		width: 100%;
+		position: relative;
+	}
+
+	.hero .container {
+		position: relative;
+		width: 100%;
+	}
+
+	.hero .container .eagle {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-top: -1rem;
+		padding: 0 2rem;
+	}
+
+	.hero .container .moose {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 0;
+		padding: 0 4.5rem;
+	}
+
+	/* swiper */
+	.content {
+		width: 100%;
+	}
+
+	.content .box .content-swiper .box-content {
+		width: 80%;
+		height: 32rem;
+	}
+
+	.content .box .box-content .main-content {
+		width: 90%;
+		height: fit-content;
+		margin: 0.8rem auto;
+	}
+
+	.content .box .box-content .main-content h1 {
+		font-size: 1rem;
+	}
+
+	.content .box .box-content .main-content img {
+		width: 24rem;
+		margin: 0.5rem auto;
+	}
+
+	.content .box .box-content .main-content p {
+		font-size: 0.8rem;
+		text-align: justify;
+		margin-top: 1.5rem;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 760px) {
+	.title {
+		width: 100%;
+		height: fit-content;
+		margin-top: 1rem;
+	}
+
+	.hero .container .eagle {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-top: -1rem;
+		padding: 0 2rem;
+	}
+
+	.hero .container .moose {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 0;
+		padding: 0 4.5rem;
+	}
+
+	.hero .container .eagle img {
+		width: 100px;
+	}
+
+	.hero .container .moose img {
+		width: 200px;
+	}
+
+	/* swiper */
+	.content {
+		top: 0.6rem;
+	}
+
+	.content .box {
+		width: 90%;
+	}
+
+	.content .box .content-swiper .box-content {
+		width: 100%;
+		height: 36rem;
+	}
+
+	.content .box .box-content .main-content {
+		width: 100%;
+		height: fit-content;
+	}
+
+	.content .box .box-content .main-content h1 {
+		font-size: 1rem;
+	}
+
+	.content .box .box-content .main-content img {
+		width: 17rem;
+		margin: 0.5rem auto;
+	}
+
+	.content .box .box-content .main-content p {
+		font-size: 0.8rem;
+		text-align: justify;
+		margin-top: 1.5rem;
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: none;
+	}
+}
